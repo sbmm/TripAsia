@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { createBrowserHistory } from 'history'
 import { Router, Route, Switch } from 'react-router-dom'
 
-import { Menu } from 'pages'
+import { Home, Menu } from 'pages'
 
 const history = createBrowserHistory()
 
@@ -11,7 +11,8 @@ class App extends Component {
     return (
       <Router history={history}>
         <Switch>
-          <Route path="/" component={Menu}></Route>
+        <Route exact path="/" component={Home}></Route>
+        <Route path="/menu" component={Menu}></Route>
         </Switch>
       </Router>
     );

@@ -12,7 +12,7 @@ const Navbar = () => {
         <nav className="main-nav">
             <NavLink exact to="/" className="logo"><img src={Logo} alt="logo" width="100px"/></NavLink>
             <ul>
-                <li><NavLink exact to="/about" activeStyle={activeStyle}>트립아시아</NavLink></li>
+                <li><NavLink exact to="/" activeStyle={activeStyle}>트립아시아</NavLink></li>
                 <li><NavLink exact to="/menu" activeStyle={activeStyle}>메뉴안내</NavLink></li>
                 <li><NavLink exact to="/store" activeStyle={activeStyle}>매장안내</NavLink></li>
             </ul>
